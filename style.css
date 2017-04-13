@@ -1,0 +1,403 @@
+/*
+
+selectors{
+		properties: values;
+}
+*/
+
+/* '!important' after a value overrides precedence */
+
+/*make a pop-up, and a fixed navigation bar*/
+
+/* Theme
+
+salmon: #ffa07a;
+light gray: #efefef
+middle gray: #bbb
+mid-dark gray: #686868
+dark gray: #333
+white: #fff
+
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+hr{
+	color: #ffffff;
+    clear: both;
+}
+
+body{
+	margin: 60px 0 0 0;
+    padding: 0;
+	font-family: helvetica,"Times New Roman", Arial;
+	background-color: #f0f0f0;
+	text-align: justify;
+	line-height: 150%;
+}
+
+
+/*---------------------------------------------------------
+                    Navigation Bar
+---------------------------------------------------------*/
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+nav{
+	font-variant: small-caps;
+/*    text-transform: uppercase;*/
+	text-align: center;
+    margin: 0%;
+}
+
+.navbar{
+    background: linear-gradient(#444, #3a3a3a, #333);
+    border-bottom: 1px solid #1e1e1e;
+    text-align: center;
+    height: 60px;
+}
+
+.nameplate{
+    overflow: hidden;
+    width: 25%;
+    float:left;
+    height: 60px;
+	display: inline-block;
+	font-weight: bold;
+    padding: 0 0 0 10%;
+	color: #bbb;
+    line-height: 60px;
+	text-decoration: none;
+}
+
+ul.topnav{
+	list-style-type: none;
+    margin: 0 auto;
+    padding: 0 10% 0 0;
+    overflow: hidden;
+    width: 75%
+}
+
+ul.topnav li{
+    float:left;
+    height: 60px;
+}
+
+ul.topnav li a{
+	display: inline-block;
+	font-weight: bold;
+	color: #bbb;
+	padding: 0px 16px;
+    line-height: 60px;
+	text-decoration: none;
+    text-align: center;
+/*    height: 60px;*/
+    
+    -webkit-transition: .33s color ease-in-out, .4s background ease-in-out;
+    -moz-transition: .33s color ease-in-out, .4s background ease-in-out;
+    -ms-transition: .33s color ease-in-out, .4s background ease-in-out;
+    -o-transition: .33s color ease-in-out, .4s background ease-in-out;
+    transition: .33s color ease-in-out, .4s background ease-in-out;
+}
+
+ul.topnav li a:hover:not(.active){
+	color: #fff;
+}
+
+ul.topnav li a:focus{
+	color: #fff;
+	background: #717171;
+    outline: none;
+}
+
+ul.topnav li a:active:not(.active){
+	margin: none;
+	padding: none;
+}
+
+ul.topnav li a.active{
+	color: #fff;
+	background: #717171;
+}
+
+ul.topnav li.right{
+    float: right;
+}
+
+.nameplate:hover, .nameplate:focus, .nameplate:active{
+    color: #fff;
+}
+
+ul.topnav li a.btn{
+    width: 100%
+}
+
+ul.topnav li a.btn svg{
+    display: block;
+    position: relative;
+    top:18px;
+    fill: #bbb;
+}
+
+.menubtn{
+    display: none;
+    color: #bbb;
+    margin: 0 auto;
+    float: right;
+    width: 25%;
+    line-height: 60px;
+}
+
+/*-------------------------------------------------------------------
+                        Content/Paragraphs
+-------------------------------------------------------------------*/
+
+h1{
+    
+}
+
+h2{
+    font-family: frutiger-light-condensed;
+    font-size: 30px;
+    font-weight: 100;
+}
+main {
+    margin: 5%;
+}
+
+.intro {
+    font-family: frutiger-light;
+    float: left;
+    text-align: left;;
+    line-height: 60px;
+    font-size: 48px;
+    width: 75%;
+    height: auto;
+    
+}
+
+.learning {
+    margin: 4% 0% 0% 0%;
+    float: right;
+}
+
+.learning ul{
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.learning ul li{
+    float: none;
+    font-family: frutiger-light-condensed;
+/*    line-height: 60px;*/
+    font-size: 22px;
+    line-height: 44px;
+	text-decoration: none;
+    text-align: center;
+/*    border-bottom: 1px solid black;*/
+}
+
+form{
+    margin: 10% auto;
+    padding: 0;
+    width: 40%;
+    text-align: center;
+}
+
+#name, #email, #phone{
+    float: right;
+    width: 50%;
+}
+
+#n, #e, #p{
+    display: inline-block;
+    position: absolute;
+    left: 38%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+/*-----------------------------------------------------
+                    Footer
+-----------------------------------------------------*/
+
+footer{
+	background-color: #99ff99;
+	clear: both;
+}
+
+footer p{
+    border: outset 3px #CC00AA;
+}
+
+/*-----------------------------------------------------
+                   Fonts
+-----------------------------------------------------*/
+
+@font-face {
+    font-family: frutiger-light;
+    src: url(fonts/frutigerlight.ttf);
+}
+
+@font-face {
+    font-family: frutiger-light-condensed;
+    src: url(fonts/frutigerlightcondensed.ttf);
+}
+
+@font-face {
+    font-family: frutiger-roman;
+    src: url(fonts/frutigerroman.ttf);
+}
+/*---------------------------------------------------------
+                    Responsive Design
+---------------------------------------------------------*/
+
+@media screen and (min-width: 0px) and (max-width:407px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navbar{
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        border-top: 1px solid #1e1e1e;
+        
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .nameplate{
+        width: 75%;
+        padding: 0;
+        pointer-events: none;
+/*        cursor: default;*/
+    }
+    
+    ul.topnav{
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        bottom: 100%;
+        display: none;
+        background: #f0f0f0;
+    }
+    
+
+    a.menubtn:hover + ul.topnav{
+        display: block;
+    }
+    
+    a.menubtn:active + ul.topnav{
+        display: block;
+    }
+
+/*
+    .navbar:hover > ul{
+        display:block;
+    }
+    
+    .navbar:active > ul{
+        display: block;
+    }
+*/
+
+    
+    ul.topnav li{
+        float: none;
+        width: 100%;
+        border-top: 1px solid #bbb;
+    }
+    
+    
+    ul.topnav li.right{
+        float: none;
+    }
+    
+    ul.topnav li a{
+        width: 100%;
+    }
+    
+    ul.topnav li a.btn{
+        display:none;
+    }
+    
+    .menubtn{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 408px) and (max-width: 615px){
+    body{
+        padding 0;
+        margin: 0;
+    }
+    
+    .navbar{
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        border-top: 1px solid #1e1e1e;
+    }
+    
+
+    /*
+    ul.topnav li.right{
+        float: left;
+    }
+*/
+    
+    ul.topnav li a.word{
+        display: none;
+    }
+    
+    ul.topnav li a.btn{
+        display: inline-block;
+        height: 100%;
+    }
+    
+    body{
+        margin: 0px;
+    }
+    
+    .nameplate{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 616px) and (max-width: 819px){
+    ul.topnav li a.word{
+        display:inline-block;
+    }
+    
+    ul.topnav li a.btn{
+        display:none;
+    }
+    
+    .nameplate{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 820px){
+    ul.topnav li a.word{
+        display:inline-block;
+    }
+    
+    ul.topnav li a.btn{
+        display:none;
+    }   
+}
