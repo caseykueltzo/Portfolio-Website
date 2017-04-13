@@ -37,6 +37,10 @@ body{
     padding: 0;
 	font-family: helvetica,"Times New Roman", Arial;
 	background-color: #f0f0f0;
+    background-image: url(images/ID%20BW.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: right top;
 	text-align: justify;
 	line-height: 150%;
 }
@@ -177,8 +181,7 @@ main {
 
 .intro {
     font-family: frutiger-light;
-    float: left;
-    text-align: left;;
+    text-align: left;
     line-height: 60px;
     font-size: 48px;
     width: 75%;
@@ -187,8 +190,8 @@ main {
 }
 
 .learning {
-    margin: 4% 0% 0% 0%;
-    float: right;
+    float: left;
+    margin: 4% 0%;
 }
 
 .learning ul{
@@ -233,12 +236,12 @@ form{
 -----------------------------------------------------*/
 
 footer{
-	background-color: #99ff99;
-	clear: both;
-}
-
-footer p{
-    border: outset 3px #CC00AA;
+    position: absolute;
+    margin-left: 5%;
+    clear: both;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
 }
 
 /*-----------------------------------------------------
