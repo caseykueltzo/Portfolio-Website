@@ -35,12 +35,12 @@ hr{
 body{
 	margin: 60px 0 0 0;
     padding: 0;
-	font-family: helvetica,"Times New Roman", Arial;
+/*	font-family: helvetica,"Times New Roman", Arial;*/
 	background-color: #f0f0f0;
     background-image: url(images/ID%20BW.jpg);
     background-repeat: no-repeat;
     background-size: 50% auto;
-    background-position: right top;
+    background-position: 90% top;
 	text-align: justify;
 	line-height: 150%;
 }
@@ -58,15 +58,13 @@ header{
 
 
 nav{
-	font-variant: small-caps;
-/*    text-transform: uppercase;*/
+    font-family: "Courier New";
 	text-align: center;
+    line-height: 60px;
     margin: 0%;
 }
 
 .navbar{
-    background: linear-gradient(#444, #3a3a3a, #333);
-    border-bottom: 1px solid #1e1e1e;
     text-align: center;
     height: 60px;
 }
@@ -79,7 +77,7 @@ nav{
 	display: inline-block;
 	font-weight: bold;
     padding: 0 0 0 10%;
-	color: #bbb;
+	color: #777;
     line-height: 60px;
 	text-decoration: none;
 }
@@ -100,7 +98,7 @@ ul.topnav li{
 ul.topnav li a{
 	display: inline-block;
 	font-weight: bold;
-	color: #bbb;
+	color: #777;
 	padding: 0px 16px;
     line-height: 60px;
 	text-decoration: none;
@@ -115,12 +113,11 @@ ul.topnav li a{
 }
 
 ul.topnav li a:hover:not(.active){
-	color: #fff;
+	color: #272727;
 }
 
 ul.topnav li a:focus{
-	color: #fff;
-	background: #717171;
+	color: #272727;
     outline: none;
 }
 
@@ -130,8 +127,8 @@ ul.topnav li a:active:not(.active){
 }
 
 ul.topnav li a.active{
-	color: #fff;
-	background: #717171;
+	color: #222;
+    text-decoration: underline;
 }
 
 ul.topnav li.right{
@@ -139,7 +136,7 @@ ul.topnav li.right{
 }
 
 .nameplate:hover, .nameplate:focus, .nameplate:active{
-    color: #fff;
+    color: #272727;
 }
 
 ul.topnav li a.btn{
@@ -181,6 +178,7 @@ main {
 
 .intro {
     font-family: frutiger-light;
+    padding-top: 5%;
     text-align: left;
     line-height: 60px;
     font-size: 48px;
@@ -191,7 +189,7 @@ main {
 
 .learning {
     float: left;
-    margin: 4% 0%;
+/*    margin: 5% 0%;*/
 }
 
 .learning ul{
@@ -209,6 +207,10 @@ main {
 	text-decoration: none;
     text-align: center;
 /*    border-bottom: 1px solid black;*/
+}
+
+.learning ul li:hover{
+    color: #777;
 }
 
 form{
@@ -240,8 +242,17 @@ footer{
     margin-left: 5%;
     clear: both;
     bottom: 0px;
-    height: 100px;
-    width: 100%;
+    height: 150px;
+    
+    font-family: frutiger-light-condensed;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+
+footer label{
+    display: inline-block;
+    margin: 10%;
 }
 
 /*-----------------------------------------------------
