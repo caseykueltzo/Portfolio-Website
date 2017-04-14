@@ -12,6 +12,7 @@ selectors{
 /* Theme
 
 salmon: #ffa07a;
+background: #f0f0f0
 light gray: #efefef
 middle gray: #bbb
 mid-dark gray: #686868
@@ -26,7 +27,6 @@ white: #fff
     box-sizing: border-box;
 }
 
-
 hr{
 	color: #ffffff;
     clear: both;
@@ -37,7 +37,7 @@ body{
     padding: 0;
 /*	font-family: helvetica,"Times New Roman", Arial;*/
 	background-color: #f0f0f0;
-    background-image: url(images/ID%20BW.jpg);
+/*    background-image: url(images/ID%20BW.png);*/
     background-repeat: no-repeat;
     background-size: 50% auto;
     background-position: 90% top;
@@ -86,7 +86,7 @@ ul.topnav{
 	list-style-type: none;
     margin: 0 auto;
     padding: 0 10% 0 0;
-    overflow: hidden;
+    overflow: hidden;center
     width: 75%
 }
 
@@ -187,18 +187,23 @@ main {
     
 }
 
-.learning {
+
+.whatami{
+    height: 100%;
+    display: flex;
+}
+.whatami aside{
     float: left;
 /*    margin: 5% 0%;*/
 }
 
-.learning ul{
+.whatami ul{
     padding: 0;
     margin: 0 auto;
     list-style-type: none;
 }
 
-.learning ul li{
+.whatami ul li{
     float: none;
     font-family: frutiger-light-condensed;
 /*    line-height: 60px;*/
@@ -209,9 +214,21 @@ main {
 /*    border-bottom: 1px solid black;*/
 }
 
-.learning ul li:hover{
+.whatami ul li:hover{
     color: #777;
 }
+
+.whatami section{
+    margin-left: 5%;
+    align-items: stretch;
+    float: left;
+    background: salmon;
+    width: 300px;
+    border-radius: 33px;
+    border: 2px black solid;
+    opacity: 0.5;
+}
+
 
 form{
     margin: 10% auto;
@@ -232,6 +249,19 @@ form{
     text-align: left;
     margin: 0;
     padding: 0;
+}
+
+.head{
+    float: right;
+    position: fixed;
+    top: 0;
+    left: 45%;
+    width: 50%;
+    height: 100vh;
+    z-index: -1;
+    background-image: url(images/ID%20BW.png);
+    background-size: cover;
+    background-position: center top;
 }
 /*-----------------------------------------------------
                     Footer
@@ -414,4 +444,11 @@ footer label{
     ul.topnav li a.btn{
         display:none;
     }   
+}
+
+@media screen and (max-width: 1200px){
+    .head{
+        left: 33%;
+        width: 67%;
+    }
 }
